@@ -27,14 +27,25 @@
             justify-content: center;
         }
 
-
+        .coffee-shop-clickable {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 500px;
+            cursor: pointer;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            z-index: 1;
+        }
 
         .scroll-indicator {
             position: absolute;
             bottom: 30px;
             left: 50%;
             transform: translateX(-50%);
-            color: white;
+            color: green;
             animation: bounce 2s infinite;
             text-align: center;
             z-index: 2;
@@ -215,6 +226,11 @@
                 width: 150px;
                 height: 150px;
             }
+
+            .coffee-shop-clickable {
+                width: 200px;
+                height: 150px;
+            }
         }
     </style>
 </head>
@@ -222,6 +238,7 @@
 
 <!-- Hero Section - Doar imaginea -->
 <section class="hero">
+    <a href="#menu" class="coffee-shop-clickable"></a>
     <div class="scroll-indicator">
         <div style="font-size: 2rem;">↓</div>
         <div>Scroll pentru mai multe</div>
@@ -239,7 +256,7 @@
                 <p>Cu sprijinul partenerului nostru Meron, transformăm fiecare ceașcă de cafea într-o oportunitate pentru educație și dezvoltare.</p>
             </div>
             <div class="about-image">
-                <img src="assets/coffee (1).png" alt="Specialty Coffee">
+                <img src="assets/logo.jpg" alt="Specialty Coffee">
             </div>
         </div>
     </div>
